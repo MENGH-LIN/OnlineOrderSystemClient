@@ -1,4 +1,2 @@
-# OnlineOrderSystemClient
-订餐系统安卓客户端
-一个简单的订餐系统客户端
-只实现了简单的用户管理·订餐和查看订单
+＃OnlineOrderSystemClient
+##订单系统安卓客户端
