@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:context=".activity.RegisterActivity">
+
+
+    <EditText
+            android:drawableLeft="@drawable/my"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:id="@+id/register_edit_name"
+            android:layout_alignParentTop="true"
+            android:hint="请输入您的用户名"/>
+
+    <EditText
+            android:drawableLeft="@drawable/password"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:id="@+id/register_edit_password_1"
+            android:hint="请输入您的密码"
+            android:layout_below="@+id/register_edit_name"
+            android:layout_alignRight="@+id/register_edit_name"
+            android:layout_alignEnd="@+id/register_edit_name"
+            android:layout_alignLeft="@+id/register_edit_name"
+            android:layout_alignStart="@+id/register_edit_name" />
+
+    <EditText
+            android:drawableLeft="@drawable/password"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:id="@+id/register_edit_password_2"
+            android:layout_below="@+id/register_edit_password_1"
+            android:layout_centerHorizontal="true"
+            android:hint="请确认您的密码" />
+    <EditText
+            android:drawableLeft="@drawable/address"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/register_edit_address"
+            android:layout_below="@+id/register_edit_password_2"
+            android:layout_centerHorizontal="true"
+            android:hint="请输入您的地址" />
+    <EditText
+            android:drawableLeft="@drawable/telephone"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="phone"
+            android:id="@+id/register_edit_telephone"
+            android:layout_below="@+id/register_edit_address"
+            android:layout_centerHorizontal="true"
+            android:hint="请输入您的联系方式" />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/register_btn_sure"
+            android:background="@color/maincolor"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/register_edit_telephone"
+            android:layout_alignLeft="@+id/register_edit_telephone"
+            android:layout_alignStart="@+id/register_edit_telephone"
+            android:layout_marginTop="20dp" />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/register_btn_cancel"
+            android:textSize="20dp"
+            android:background="#FF7F50"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/register_btn_sure"
+            android:layout_alignLeft="@+id/register_btn_sure"
+            android:layout_alignStart="@+id/register_btn_sure"
+            android:layout_marginTop="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:context=".activity.ForgetActivity">
+
+    <EditText
+            android:drawableLeft="@drawable/my"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:id="@+id/forget_edit_name"
+            android:layout_alignParentTop="true"
+            android:hint="请输入您的用户名"/>
+
+    <EditText
+            android:drawableLeft="@drawable/password"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:id="@+id/forget_edit_password_1"
+            android:hint="请输入您的新密码"
+            android:layout_below="@+id/forget_edit_name"
+            android:layout_alignRight="@+id/forget_edit_name"
+            android:layout_alignEnd="@+id/forget_edit_name"
+            android:layout_alignLeft="@+id/forget_edit_name"
+            android:layout_alignStart="@+id/forget_edit_name" />
+
+    <EditText
+            android:drawableLeft="@drawable/password"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:id="@+id/forget_edit_password_2"
+            android:layout_below="@+id/forget_edit_password_1"
+            android:layout_centerHorizontal="true"
+            android:hint="请确认您的新密码" />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/forget_btn_sure"
+            android:background="#545bcb"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/forget_edit_password_2"
+            android:layout_alignLeft="@+id/forget_edit_password_2"
+            android:layout_alignStart="@+id/forget_edit_password_2"
+            android:layout_marginTop="20dp" />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/forget_btn_cancel"
+            android:textSize="20dp"
+            android:background="#FF6347"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/forget_btn_sure"
+            android:layout_alignLeft="@+id/forget_btn_sure"
+            android:layout_alignStart="@+id/forget_btn_sure"
+            android:layout_marginTop="10dp" />
+
+</RelativeLayout>
